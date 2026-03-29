@@ -18,6 +18,14 @@
     <meta name="theme-color" content="#712cf9" />
     <link href="css/sign-in.css" rel="stylesheet" />
     <style>
+      body {
+      background-image: url('img/ProjectAtlasBG.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+    }
+
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -118,86 +126,16 @@
         ></path>
       </symbol>
     </svg>
-    <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
-    >
-      <button
-        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
-      >
-        <svg class="bi my-1 theme-icon-active" aria-hidden="true">
-          <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul
-        class="dropdown-menu dropdown-menu-end shadow"
-        aria-labelledby="bd-theme-text"
-      >
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="light"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center active"
-            data-bs-theme-value="auto"
-            aria-pressed="true"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-    <main class="form-signin w-100 m-auto">
+    <main class="form-signin w-100 mx-auto text-white text-center">
       <form>
         <img
-          class="mb-4"
-          src="../assets/brand/bootstrap-logo.svg"
+          class="mb-2"
+          src="img/ProjectAtlasLogoNoBG.png"
           alt=""
-          width="72"
-          height="57"
+          width="120"
+          height="100"
         />
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <h1 class="h3 mb-3 fw-normal text-white">Please sign in</h1>
         <div class="form-floating">
           <input
             type="email"
@@ -223,14 +161,14 @@
             value="remember-me"
             id="checkDefault"
           />
-          <label class="form-check-label" for="checkDefault">
+          <label class="form-check-label text-white" for="checkDefault">
             Remember me
           </label>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit">
           Sign in
         </button>
-        <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2025</p>
+        <p class="mt-2 mb-3 text-white">&copy; 2017–2025, Edited by Jacob Gewin</p>
       </form>
     </main>
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
